@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+
+	/*MENU DO CAPIROTO!*/
+		/*-- Menu - Tera essa cor: #230307 
+		  --Hover do texto do Menu tera esta cor: #A99C9E
+		*/
+
+#interface{
+	width: 100%;
+	height: 48px;
+	max-height: 48px;
+	margin: 0;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-color: rgba(0,0,0,0.8);
+	font-family: 'Swis721 WGL4 BT';
+	
+}
+
+	/*Largura maxima do Menu de 1000 px e centralizacao*/
+.menu{
+	width: 100%;
+	height: 48px;
+	margin: auto;
+	text-align: center;
+	max-width: 1000px;
+	
+}
+
+.menu ul{
+	list-style: none;
+	display: flex;
+
+}
+	/*Flexibilidade do Menu lateralmente*/
+.menu ul li{
+	flex-grow: 1;
+
+}
+
+.menu a{
+	text-decoration: none;
+	display: block;
+	text-align: justify;
+	color: #fff;
+	font-size: 18px;
+	box-sizing: content-box;
+
+}
+
+.menu a:hover{
+	color: #A99C9E;
+}
+
+
+	/*Caso utilizar ICONE altera a cor do mesmo
+#img a:hover{
+	color: #A99C9E;
+}
+
+	*/
+
+label[for="bt_menu"]{
+	font-family: 'Swis721 WGL4 BT';
+	text-align: center;
+	font-size: 28px;
+	cursor: pointer;
+	width: 40px;
+	height: 34px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: #fff;
+	padding: 4px;
+}
+
+#bt_menu {
+	display: none;
+}
+
+label[for="bt_menu"]{
+	display: none;
+}
+
+	/*Configuracao do Menu Mobile*/
+
+@media(max-width: 767px){
+
+	label[for="bt_menu"]{
+		display: block;
+	}
+	
+	
+
+	.menu ul{
+		background-color: rgb(0,0,0);
+		display: block;
+		margin: auto;
+		
+		
+	
+	}
+
+	
+	.menu a{
+		text-decoration: none;
+		display: block;
+		color: #fff;
+		font-size: 14px;
+		height: 48px;
+		
+
+	}
+
+	#interface{
+		background-color: rgba(0,0,0,0);
+
+	
+	}
+	
+
+	#sub{
+		text-align: left;
+		border-bottom: 1px solid #333;
+		font-size: 16px;
+		display: block;
+		width: 90%;
+		height: 48px;
+		max-height: 40px;
+		margin-top: 10px;
+		
+	}
+	
+
+	#img{
+		text-align: center;
+	}
+
+
+
+	/*Efeito Menu sumir para depois reaparecer
+	.menu ul li{
+		margin-top: -100%;
+
+	}
+	*/
+
+}
+
+	input#bt_menu:checked - #sub {
+        margin-left:0;
+    } 
+h1 {
+	color: #A99C9E;
+
+}
+p {
+	text-align:justify;
+	text-indent:50px;
+}
+
