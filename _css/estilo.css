@@ -1,31 +1,44 @@
 @charset "UTF-8";
+ /*There will never be a second chance to make a good first impression.*/
 
 
-	/*MENU DO CAPIROTO!*/
-		/*-- Menu - Tera essa cor: #230307 
-		  --Hover do texto do Menu tera esta cor: #A99C9E
-		*/
+	/*MENU DO CAPIROTO!
+		-- Menu - Tera essa cor: #230307 
+		--Hover do texto do Menu tera esta cor: #A99C9E
+	*/
+html, body{
+	height: 100%;
+	margin: 0;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
 
 #interface{
 	width: 100%;
-	height: 48px;
-	max-height: 48px;
+	height: 50px;
+	max-height: 50px;
 	margin: 0;
 	top: 0;
 	left: 0;
 	position: fixed;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.7);
 	font-family: 'Swis721 WGL4 BT';
-	
+	line-height: normal;
+	z-index: 4;
+
 }
 
 	/*Largura maxima do Menu de 1000 px e centralizacao*/
 .menu{
-	width: 100%;
+
 	height: 48px;
 	margin: auto;
 	text-align: center;
 	max-width: 1000px;
+	
 	
 }
 
@@ -33,21 +46,20 @@
 	list-style: none;
 	display: flex;
 
+
 }
 	/*Flexibilidade do Menu lateralmente*/
 .menu ul li{
 	flex-grow: 1;
 
+
 }
 
 .menu a{
 	text-decoration: none;
-	display: block;
-	text-align: justify;
 	color: #fff;
-	font-size: 18px;
-	box-sizing: content-box;
-
+	font-size: 14px;
+	
 }
 
 .menu a:hover{
@@ -55,11 +67,14 @@
 }
 
 
+
+
+
 	/*Caso utilizar ICONE altera a cor do mesmo
+
 #img a:hover{
 	color: #A99C9E;
 }
-
 	*/
 
 label[for="bt_menu"]{
@@ -84,61 +99,206 @@ label[for="bt_menu"]{
 	display: none;
 }
 
-	/*Configuracao do Menu Mobile*/
 
-@media(max-width: 767px){
+
+	/*Parallax effect*/
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 1;
+
+
+
+	/* fixed = parallax
+	   scroll = normal
+	*/
+	background-attachment: fixed;
+	
+}
+
+
+.pimg1{
+	background-image: url('../_imagens/img1.png');
+	min-height: 100%;
+}
+
+.pimg2{
+	background-image: url('../_imagens/img2.jpeg');
+	min-height: 100%;
+}
+
+.pimg3{
+	background-image: url('../_imagens/img3.jpeg');
+	min-height: 100%;
+}
+.pimg4{
+	background-image: url('../_imagens/img5.jpeg');
+	min-height: 100%;
+}
+
+#logo{
+	width: 35%;
+	height: 25%;
+	margin-top: -500px;
+	margin-left: -55px;
+	z-index: 6;
+
+}
+
+iframe.inner{
+	text-align: center;
+}
+
+.section{
+	text-align: justify;
+	padding: 10px 15%;
+	
+}
+
+
+.section-light{
+	background-color: #FFFFFF;
+	color: #666;
+}
+
+.section-dark{
+	background-color: #3D474D;
+	color: #fff;
+}	
+
+
+.ptext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.ptext .border{
+	background-color: #111;
+	color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+
+}
+
+.ptext .border.trans{
+	background-color: transparent;
+}
+
+
+.section h2{
+	font-size: 50px;
+	text-align: center;
+}
+
+	/*Footer*/
+
+footer.rodape{
+	background-color: rgba(0,0,0,0.8);
+	font-family: 'Swis721 WGL4 BT';
+	font-size: 14px;
+	width: 100%;
+	height: 100px;
+	color: #fff;
+	text-align: center;
+	z-index: 6;
+	margin:0px;
+	padding: 0px;
+
+}
+
+
+.rodape ul{
+	list-style: none;
+	display: flex;
+	
+
+
+}
+	/*Flexibilidade do Menu lateralmente*/
+.rodape ul li{
+	flex-grow: 1;
+
+
+}
+
+
+footer.rodape a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	
+}
+.rodape a:hover{
+	color: #A99C9E;
+	
+}
+
+
+	/*Configuracao do Menu Mobile*/
+@media(max-width: 800px){
 
 	label[for="bt_menu"]{
 		display: block;
 	}
-	
-	
-
+	.menu{
+		background-color: rgba(0,0,0,0);
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		top: 0;
+		left: 0;
+		position: fixed;
+		font-family: 'Swis721 WGL4 BT';
+	}
+		
 	.menu ul{
 		background-color: rgb(0,0,0);
-		display: block;
+		display: none;
 		margin: auto;
-		
-		
-	
 	}
-
 	
 	.menu a{
 		text-decoration: none;
-		display: block;
 		color: #fff;
-		font-size: 14px;
+		font-size: 16px;
 		height: 48px;
 		
-
 	}
 
-	#interface{
-		background-color: rgba(0,0,0,0);
-
-	
-	}
-	
-
-	#sub{
+	.sub{
 		text-align: left;
 		border-bottom: 1px solid #333;
-		font-size: 16px;
-		display: block;
+		font-size: 18px;
 		width: 90%;
 		height: 48px;
 		max-height: 40px;
 		margin-top: 10px;
-		
 	}
-	
-
+		
 	#img{
 		text-align: center;
+		display: inline-block;
+		margin-top: 10px;
 	}
 
+	#mobile_menu{
+		height: 100%;
 
+	}
+		
+	#bt_menu:checked ~ .barra{
+		display: block;
+	}
 
 	/*Efeito Menu sumir para depois reaparecer
 	.menu ul li{
@@ -146,12 +306,153 @@ label[for="bt_menu"]{
 
 	}
 	*/
-
 }
 
-	input#bt_menu:checked - #sub {
-        margin-left:0;
-    } 
+
+	/*Loading
+	*--=HTML LOADING...=--*
+	<!--Loading...<div class="spinner"></div>-->
+
+	*--=CSS LOADING...=--*
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #333;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+
+
+  -*-*-*-*-*-*-*-*-* 
+  	*--=HTML LOADING...=--*
+
+  <div class="sk-folding-cube">
+  <div class="sk-cube1 sk-cube"></div>
+  <div class="sk-cube2 sk-cube"></div>
+  <div class="sk-cube4 sk-cube"></div>
+  <div class="sk-cube3 sk-cube"></div>
+</div>
+
+  *--=CSS LOADING...=--*
+
+  	.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+
+*-*-*-*-*-*-*-*-*-
+
+ 	*/
+
+
+	/*Body*/
+
+
+	
 h1 {
 	color: #A99C9E;
 
