@@ -50,12 +50,12 @@ html, body{
 	text-decoration: none;
 	color: #fff;
 	font-size: 14px;
-	transition: all 0.4s;
+	
 }
 
 .menu a:hover{
 	color: #A99C9E;
-	transition: all 0.4s;
+	
 }
 
 /*

@@ -5,6 +5,8 @@
 		<meta charset="UTF-8">
 		<link rel="icon" href="_icones/favicon.png">
 		<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+		
+
 
 		<!--<link rel="stylesheet" type="text/css" href="_css/reset.css">-->
 	</head>
@@ -14,19 +16,28 @@
 			<nav class="menu">
 				<label for="bt_menu">&#9776;</label>
 				<input type="checkbox" id="bt_menu">
+				<script>
+					var bleep = new Audio();
+					bleep.src = "_sons/hover.ogg";
+					;
+
+					var tleep = new Audio();
+					tleep.src = "_sons/hover1.ogg";
+					;
+  				</script>
 				
 				<ul class="barra">				
 					<li id="img"><a href="index.html"><img src="_imagens/menu.png" alt="logo marca e pagina inicial"></a></li>
 					
-					<li class="sub"><a href="dictionaryofterms.html">Dicionario</a></li>
-					<li class="sub"><a href="movies.html">Filmes e Series</a></li>
-					<li class="sub"><a href="hacking.html">Hacking</a></li>
-					<li class="sub"><a href="motivational.html">Motivacional</a></li>
-					<li class="sub"><a href="recommended.html">Recomendado</a></li>
-					<li class="sub"><a href="profile.html">Perfil</a></li>
-					<li class="sub"><a href="contact.html">Contato</a></li>
-					<li class="sub"><a href="faq.html">FAQ</a></li>
-					<li id="mobile_menu"><a href="#"></a></li>
+					<li class="sub"><a href="dictionaryofterms.html" onmousemove="bleep.play()">Dicionario</a></li>
+					<li class="sub"><a href="movies.html" onmousemove="tleep.play()">Filmes e Series</a></li>
+					<li class="sub"><a href="hacking.html" onmousemove="bleep.play()">Hacking</a></li>
+					<li class="sub"><a href="motivational.html" onmousemove="tleep.play()">Motivacional</a></li>
+					<li class="sub"><a href="recommended.html" onmousemove="bleep.play()">Recomendado</a></li>
+					<li class="sub"><a href="profile.html" onmousemove="tleep.play()">Perfil</a></li>
+					<li class="sub"><a href="contact.html" onmousemove="bleep.play()">Contato</a></li>
+					<li class="sub"><a href="faq.html" onmousemove="tleep.play()">FAQ</a></li>
+					<li id="mobile_menu"><a href="#" onmousemove="tleep.play()"></a></li>
 
 				</ul>
 			</nav>
