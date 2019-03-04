@@ -1,198 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Bonieck</title>
-		<meta charset="UTF-8">
-		<link rel="icon" href="_icones/favicon.png">
-		<link rel="stylesheet" type="text/css" href="_css/estilo.css">
-		<script src="_javascript/script.js"></script>
-
-
-		<!--<link rel="stylesheet" type="text/css" href="_css/reset.css">-->
+			<title>Bonieck</title>
+			<meta charset="UTF-8">
+			<link rel="icon" href="_icones/favicon.png">
+			<link rel="stylesheet" type="text/css" href="_css/style.css">
+			<link rel="stylesheet" type="text/css" href="_css/diamonds.css">
+			<script src="_javascript/script.js"></script>
+			<script src="_javascript/jquery.diamonds.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+			<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	</head>
 	<body>
+		<div  id="particles-js"></div>
+			<div class="conteiner">
+				<img id="icon" src="_icones/menu/1darth.png">
+					
+				<header id="interface">
+					
+					<nav class="menu">
+						<label for="bt_menu">&#9776;</label>
+						<input type="checkbox" id="bt_menu">
+						
+						
+						<ul class="barra">				
+							<li id="img"><a class="hover" href="index.html"><img style="cursor: help" src="_imagens/menu.png" alt="logo marca e pagina inicial"></a></li>
 
-		<header id="interface">
-			<nav class="menu">
-				<label for="bt_menu">&#9776;</label>
-				<input type="checkbox" id="bt_menu">
+							<li onmouseover="mudaFoto('_icones/menu/1clonewhite.png')" onmouseout="mudaFoto('_icones/menu/1darth.png')" class="sub"><a class="hover" href="index.html" onmouseover="tleep.play()">Motivational</a></li>
+
+							<li onmouseover="mudaFoto('_icones/menu/1boba.png')" onmouseout="mudaFoto('_icones/menu/1darth.png')" class="sub"><a class="hover" href="movies.html" onmouseover="tleep.play()">Movies</a></li>
+							
+							<li onmouseover="mudaFoto('_icones/menu/1darth_maul2.png')" onmouseout="mudaFoto('_icones/menu/1darth.png')" class="sub"><a class="hover" href="hacking.html" onmouseover="bleep.play()">Hacking</a></li>
+
+							<li onmouseover="mudaFoto('_icones/menu/1clonered.png')" onmouseout="mudaFoto('_icones/menu/1darth.png')" class="sub"><a class="hover" href="recomended.html" onmouseover="bleep.play()">Recommended</a></li>
+
+						
+							<li onmouseover="mudaFoto('_icones/menu/1clone.png')" onmouseout="mudaFoto('_icones/menu/1darth.png')" class="sub"><a class="hover" href="profile.html" onmouseover="tleep.play()">About</a></li>
+
+							<!--
+							<li  class="sub"><a href="faq.html" onmouseover="tleep.play()">FAQ</a></li>
+							-->
+
+							<!--
+							<li class="sub"><a href="dictionaryofterms.html" onmouseover="bleep.play()">Dicionary of Terms</a></li>
+							-->
+							<li id="mobile_menu"><a href="#" onmouseover="tleep.play()"></a></li>
+
+						</ul>
+					</nav>
+				</header>
 				
+				<section class="section">
+						<h2>Você não suporta a verdade!</h2>
+						<h3 class="sub-video">A verdade dói só NA HORA! &nbsp; Evandro Guedes</h3>
+						<div class="embed">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/y667HJP0I9U?controls=0&rel=0&modestbranding=0&showinfo=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+				</section>
+				<hr>
+				<section class="section">
+						<h2>Você é um Bosta!</h2>
+						<h3 class="sub-video">Motivacional para ler texto difícil. &nbsp; Clóvis de Barros Filho.</h3>
+						<div class="embed">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/b4LWAdkekKE?controls=0&rel=0&modestbranding=0&showinfo=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+				</section>
+				<hr>
 				
-				<ul class="barra">				
-					<li id="img"><a href="index.html"><img src="_imagens/menu.png" alt="logo marca e pagina inicial"></a></li>
-					
-					<li class="sub"><a href="dictionaryofterms.html" onmousemove="bleep.play()">Dicionario</a></li>
-					<li class="sub"><a href="movies.html" onmousemove="tleep.play()">Filmes e Series</a></li>
-					<li class="sub"><a href="hacking.html" onmousemove="bleep.play()">Hacking</a></li>
-					<li class="sub"><a href="motivational.html" onmousemove="tleep.play()">Motivacional</a></li>
-					<li class="sub"><a href="recommended.html" onmousemove="bleep.play()">Recomendado</a></li>
-					<li class="sub"><a href="profile.html" onmousemove="tleep.play()">Perfil</a></li>
-					<li class="sub"><a href="contact.html" onmousemove="bleep.play()">Contato</a></li>
-					<li class="sub"><a href="faq.html" onmousemove="tleep.play()">FAQ</a></li>
-					<li id="mobile_menu"><a href="#" onmousemove="tleep.play()"></a></li>
+				<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-				</ul>
-			</nav>
-		</header>
-
-		<div class="pimg1">
-			<div class="ptext">
+				<script>
+					particlesJS.load('particles-js', '_javascript/particles.json', function(){
+					console.log('_javascript/particles.json loaded...');
+					});
+				</script>
 				
-			</div>
-		</div>
+			<footer class="rodape">
+				<div class="background">		
+					<div class="center">
+						<div class="footer-align">
 
-		<section class="section section-light">
-			<h2 id="hel">Diamonds</h2>
-			<ul id="album-fotos">
-				<li id="foto01">
-					<span>Teste1</span>
-				</li>
-				<li id="foto02">
-					<span>Teste2</span>
-				</li>
-				<li id="foto03">
-					<span>Teste3</span>
-				</li>
-				<li id="foto04">
-					<span>Teste4</span>
-				</li>
-				<li id="foto05">
-					<span>Teste5</span>
-				</li>
-				<li id="foto06">
-					<span>Teste5</span>
-				</li>
-				<li id="foto07">
-					<span>Teste5</span>
-				</li>
-				<li id="foto08">
-					<span>Teste5</span>
-				</li>
-				<li id="foto09">
-					<span>Teste5</span>
-				</li>
-			</ul>
-			
-		</section>
+							<div class="footer-left">
+									<a class="hover" href="profile.html" class="sub" onmouseover="bleep.play()">
+										<img id="logo" src="_imagens/logo3.png">
+									</a>
+							</div>
 
-		<div class="pimg2">
-			<div class="ptext">
-				<span class="border trans">
-					Image Two Text
-				</span>
-			</div>
-		</div>
-		
-		<section class="section section-light">
-			<h2>Section Vídeo</h2>
-			<p>
-				<iframe class="inner" frameborder="0" allowfullscreen="1" encrypted-media" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/Q9n2t-EywyI?playlist=Q9n2t-EywyI&amp;iv_load_policy=3&amp;enablejsapi=1&amp;disablekb=1&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;origin=http%3A%2F%2Fescale.com.br&amp;widgetid=1" id="widget2" style="max-width: 100%; margin-left: -38px; margin-top: 0px; width: 1920px; height: 752px; opacity: 1;"></iframe>
-			</p>
-		</section>
-		
-		<div class="pimg3">
-			<div class="ptext">
-				<span class="border">
-					Image Three
-				</span>
-			</div>
-		</div>
-		
-		<section class="section section-dark">
-			<h2>Section Article Text</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam vel dolorem magnam! Corrupti necessitatibus accusantium est vero quam eos, nemo quidem, magnam ullam voluptatem excepturi explicabo molestias saepe ad ipsum? Minus rem placeat laboriosam repellat dolorem nesciunt, cum culpa aperiam nulla, eaque labore, nam ea earum repellendus obcaecati possimus quam ipsa soluta aspernatur aliquam! Fugiat eum repellendus sint expedita voluptatum, reiciendis voluptas id nisi? Maiores corporis iusto quo maxime in libero, tempore laudantium, odio, sint architecto, doloremque voluptate cupiditate cumque molestiae. Iusto consequuntur, harum beatae quo excepturi ex sint fugit vel similique. Optio eveniet, sequi illo recusandae voluptatibus error!
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam vel dolorem magnam! Corrupti necessitatibus accusantium est vero quam eos, nemo quidem, magnam ullam voluptatem excepturi explicabo molestias saepe ad ipsum? Minus rem placeat laboriosam repellat dolorem nesciunt, cum culpa aperiam nulla, eaque labore, nam ea earum repellendus obcaecati possimus quam ipsa soluta aspernatur aliquam! Fugiat eum repellendus sint expedita voluptatum, reiciendis voluptas id nisi? Maiores corporis iusto quo maxime in libero, tempore laudantium, odio, sint architecto, doloremque voluptate cupiditate cumque molestiae. Iusto consequuntur, harum beatae quo excepturi ex sint fugit vel similique. Optio eveniet, sequi illo recusandae voluptatibus error!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam vel dolorem magnam! Corrupti necessitatibus accusantium est vero quam eos, nemo quidem, magnam ullam voluptatem excepturi explicabo molestias saepe ad ipsum? Minus rem placeat laboriosam repellat dolorem nesciunt, cum culpa aperiam nulla, eaque labore, nam ea earum repellendus obcaecati possimus quam ipsa soluta aspernatur aliquam! Fugiat eum repellendus sint expedita voluptatum, reiciendis voluptas id nisi? Maiores corporis iusto quo maxime in libero, tempore laudantium, odio, sint architecto, doloremque voluptate cupiditate cumque molestiae. Iusto consequuntur, harum beatae quo excepturi ex sint fugit vel similique. Optio eveniet, sequi illo recusandae voluptatibus error!
-			</p>
-		</section>
-
-		<div class="pimg4">
-			<div class="ptext">
-				<span class="border">
-					Image four
-				</span>
-			</div>
-		</div>
-		<section class="section section-light">
-			<h2>Section Two</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam vel dolorem magnam! Corrupti necessitatibus accusantium est vero quam eos, nemo quidem, magnam ullam voluptatem excepturi explicabo molestias saepe ad ipsum? Minus rem placeat laboriosam repellat dolorem nesciunt, cum culpa aperiam nulla, eaque labore, nam ea earum repellendus obcaecati possimus quam ipsa soluta aspernatur aliquam! Fugiat eum repellendus sint expedita voluptatum, reiciendis voluptas id nisi? Maiores corporis iusto quo maxime in libero, tempore laudantium, odio, sint architecto, doloremque voluptate cupiditate cumque molestiae. Iusto consequuntur, harum beatae quo excepturi ex sint fugit vel similique. Optio eveniet, sequi illo recusandae voluptatibus error!
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam vel dolorem magnam! Corrupti necessitatibus accusantium est vero quam eos, nemo quidem, magnam ullam voluptatem excepturi explicabo molestias saepe ad ipsum? Minus rem placeat laboriosam repellat dolorem nesciunt, cum culpa aperiam nulla, eaque labore, nam ea earum repellendus obcaecati possimus quam ipsa soluta aspernatur aliquam! Fugiat eum repellendus sint expedita voluptatum, reiciendis voluptas id nisi? Maiores corporis iusto quo maxime in libero, tempore laudantium, odio, sint architecto, doloremque voluptate cupiditate cumque molestiae. Iusto consequuntur, harum beatae quo excepturi ex sint fugit vel similique. Optio eveniet, sequi illo recusandae voluptatibus error!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam vel dolorem magnam! Corrupti necessitatibus accusantium est vero quam eos, nemo quidem, magnam ullam voluptatem excepturi explicabo molestias saepe ad ipsum? Minus rem placeat laboriosam repellat dolorem nesciunt, cum culpa aperiam nulla, eaque labore, nam ea earum repellendus obcaecati possimus quam ipsa soluta aspernatur aliquam! Fugiat eum repellendus sint expedita voluptatum, reiciendis voluptas id nisi? Maiores corporis iusto quo maxime in libero, tempore laudantium, odio, sint architecto, doloremque voluptate cupiditate cumque molestiae. Iusto consequuntur, harum beatae quo excepturi ex sint fugit vel similique. Optio eveniet, sequi illo recusandae voluptatibus error!
-			</p>
-		</section>
-		<div class="pimg7">
-			<div class="ptext">
-				<span class="border trans">
-					<p class="text-p"> Thank you for coming!</p>
-
-				</span>
-			</div>
-		</div>
-
-
-
-
-
-													<!--Menu official
-										<li><a id="img" href="#"><img src="menu.png"></a></li>
-
-										<li><a href="">Motivacional</a></li>
-										<li><a href="">Movies</a></li>
-										<li><a href="">Economy</a></li>
-										<li><a href="">Profile</a></li>
-										<li><a href="">Hacking</a></li>
-										<li><a href="">Dicionary of Terms</a></li>
-										<li><a href="">Contact</a></li>
-										<li><a href="">FAQ</a></li>
-										<li><a href="">Recommended Content</a></li>
-													-->				
-		
-		
-		
-
-		<footer class="rodape">
-			<div class="background">
-			<!-- REDIRECTS TO OMBUDSMAN] SUBSTITUIR POR ICONES-->
-			<div class="center">
-				<div class="footer-align">
-
-					<div class="footer-left">
-						<span class="border trans">
-							<img id="logo" src="_imagens/logo3.png">
-					    </span>
-					   
-					    	<a href="#" class="sub"></a>
+							<div class="footer-right">
+									
+									<a href="https://www.linkedin.com/in/bonieckdouglas/" target="_blank"><img class="icone" src="_icones/linkedin.png"></a>
+									
+									<a href="https://github.com/bonieck" target="_blank"><img class="icone" src="_icones/github.png"></a>
+									
+									<a href="https://www.facebook.com/bonieck.douglas" target="_blank"><img class="icone" src="_icones/facebook.png"></a>
+								
+									<a href="https://twitter.com/bonieck_douglas" target="_blank"><img class="icone" src="_icones/twitter.png"></a>
+									
+									<a href="https://www.instagram.com/bonieckdouglas/" target="_blank"><img class="icone" src="_icones/instagram.png"></a>
+									<!--
+									<a href="#"><img class="icone" src="_icones/youtube.png"></a>
+								
+									<a href="#"><img class="icone" src="_icones/whatsapp.png"></a>
+									-->						
+							</div>
+							<!--
+							<div class="footer-right">
+								&copy;Copyright&nbsp;2018 by Bonieck Douglas&nbsp;
+								<hr>
+							</div>
+						-->
+						</div>			
 					</div>
-					
-
-
-					<div class="footer-right">
-						
-						<a href="https://www.linkedin.com/in/bonieckdouglas/" target="_blank"><img class="icone" src="_icones/linkedin.png"></a>
-						
-						<a href="https://github.com/bonieck" target="_blank"><img class="icone" src="_icones/github.png"></a>
-						
-						<a href="https://www.facebook.com/bonieck.douglas" target="_blank"><img class="icone" src="_icones/facebook.png"></a>
-					
-						<a href="#"><img class="icone" src="_icones/twitter.png"></a>
-						
-						<a href="#"><img class="icone" src="_icones/instagram.png"></a>
-						<!--
-						<a href="#"><img class="icone" src="_icones/youtube.png"></a>
-					
-						<a href="#"><img class="icone" src="_icones/whatsapp.png"></a>
-						-->						
-					</div>
-					<!--
-					<div class="footer-right">
-						&copy;Copyright&nbsp;2018 by Bonieck Douglas&nbsp;
-						<hr>
-					</div>
-				-->
-				<div>
-			
-		 	</div>
-		 </div>
-		</footer>
+				</div>
+			</footer>
+		</div>
+		<span id="codelove">
+				<img class="brasil" src="_icones/coffe2.png">
+				<img class="brasil" src="_icones/plus_white.png">
+				<img class="brasil" id="heart" src="_icones/heart_w.png">
+				<img class="brasil" src="_icones/equal_w.png">
+				<img class="brasil" src="_icones/tag_white.png">
+			</span>
+		
+				<img class="flag" src="_icones/brasil.png">
+				<img class="flag" src="_icones/minas.png">
 	</body>
 </html>

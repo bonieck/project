@@ -1,0 +1,23 @@
+{
+	"particles":{
+	"number":{
+		"value":100
+	},
+	"color":{
+		"value":"#000"
+	},
+	"shape":{
+		"type":"circle",
+		"stroke":{
+			"width":4,
+			"color": "#fff"
+		},
+		"image": {
+			"src": "https://cdn.icon-icons.com/icons2/318/PNG/512/Darth-Vader-icon_34501.png"
+		}
+	},
+	"opacity":{
+		"value":0.1
+	}
+	}
+}
